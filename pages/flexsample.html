@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CodePen - Demo Flexbox 3</title>
+        <style>
+            body{padding: 2em;}
+ 
+            .headerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: lightgreen;
+                font-weight: bold;
+                padding: 1opx;
+            }
+
+            .footerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: lightgreen;
+                font-weight: bold;
+                padding: 1opx;
+            }
+
+            .mainContainer{
+                display: flex;
+                flex-flow: row wrap;
+                text-align: center;
+                font-weight: bold;
+                
+            }
+                                                        
+            .mainContentItem{
+            text-align: left;
+            background: deepskyblue;
+            }
+
+            article{
+            padding: 10px;
+            margin: 10px;
+            background: lightskyblue;
+            }
+
+            .sideBarLeftItem{ background: lightsalmon;}
+            .sideBarRightItem{background: hotpink;}
+            .sideBarItem{ flex: 1 0 0; border:0px solid green;}
+            .mainContentItem{flex: 3 0px;}
+            .sideBarLeftItem{ order:1;}
+            .sideBarRightItem{ order:3;}
+            .mainContentItem{order:2;}
+                        
+        </style>
+    </head>
+    <body>
+        <header class="headerContainer"><h1>HEADER - Sample Flexbox Example</h1></header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2>First Article</h2>
+                    <p>Most web pages are written in a combination of HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets). In short, HTML specifies the content and logical structure of the page, while the CSS specifies how it looks: its colors, fonts, formatting, layout, and styling.</p>
+                </article>
+                <article>
+                    <h2>Second Article</h2>
+                    <p>One of the most defining features of the flex layout is its ability to form-fit, based on its viewing environment. Flex boxes can adjust in size—either decreasing, to avoid unnecessarily monopolizing space, or increasing to make room for contents to be constrained within its boundaries. Moreover, the flex layout is less restrictive in terms of content flow than those, for example, of the block and inline display types, which are generally uni-directional. The flex directional flow can be specified as rightwards, leftwards, upwards, or downwards. Individual items within a flex container may also be automatically reordered and rearranged to suit the available layout space.[3]</p>
+                </article>
+                <article>
+                    <h2>Third Article</h2>
+
+                    <p>By setting the display to one of the two values above, an element becomes a flex container and its children flex items. Setting the display to flex makes the container a block-level element, while setting the display to inline-flex makes the container an inline-level element.</p>
+                </article>
+            </section>
+            <sidebar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sidebar>
+            <sidebar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sidebar>
+        </div>
+        <footer class="footerContainer">Footer</footer>
+        <script type="text/javascript"></script>
+    </body>
+</html>
